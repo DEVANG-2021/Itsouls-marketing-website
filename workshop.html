@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Workshop</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css.css">
+     
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+        <!-- font -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300&family=Kdam+Thmor+Pro&family=Montserrat&display=swap" rel="stylesheet">    
+  <!-- worj=k section css -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- animation -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- animation end -->
+
+<!-- fevicon -->
+<link rel="icon" type="image/x-icon" href="asset/IT.png">
+<style>
+
+
+/* Full height image header */
+.navbar1{
+  z-index: 1;
+}
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+  .navbar1{
+    z-index: 1;
+  }
+}
+
+.w3-section, .w3-code {
+    margin-top: 16px!important;
+    margin-bottom: 72px!important;
+}
+    </style>
+    </head>
+    <body>
+              <!-- navbar-->
+              <nav class="navbar1">
+                <h1 class="logo">  <img src="asset/ITsouls Logo.png" id="mlogo"></h1>
+                <ul class="nav-link1">
+                    <li class="ctn"><a href="index.html" class="a"><b>Home</b></a></li>
+                    <li class="ctn"><a href="about.html" class="a"><b>About</b></a></li>
+                    <li class="ctn"><a href="service.html" class="a"><b>Service</b></a></li>
+                    <li class="ctn"><a href="course.html" class="a"><b>Courses</b></a></li>
+                    <li class="ctn"><a href="workshop.html" class="a"><b>Workshops</b></a></li>
+                    <li class="ctn"><a href="contact.html" class="a"><b>Contact</b></a></li>
+                </ul>
+            </nav>
+            <img src="asset/521077-200.png" class="menu-btn"/>
+            <!-- end navbar -->
+
+            <!-- workshop gallery -->
+            
+           <!-- Work Section -->
+
+           <div class="shero">
+            <h1><b>Our Works</b></h1>
+            </div>
+            <div class="about-div">
+        
+            
+   
+              <div class="about1">
+                
+                  <div class="con">
+                  <h1 data-aos="fade-up">Our awesome works,makes a</h1>
+                  <p data-aos="fade-right">Do know about our creative minds who work for and explore best of their abilities in ITsouls.</p>
+                  <br>
+                  <p data-aos="fade-left">They are well equipped with unique imagination to development capabilities which is put together and gives best solutions.</p>
+                  <br>
+                 
+              </div>
+              </div>
+            </div>
+  <div class="w3-container"  id="work"></div>
+  <!-- <p class="w3-center w3-large"><b>our awesome works,makes a</b></p>
+  <div >
+  <p class="n" style="text-align: center;">Do know about our creative minds who work for and explore best of their abilities in ITsouls.
+    <br>They are well equipped with unique imagination to development capabilities which is put together and gives best solutions.
+</p>
+</div> -->
+  <div class="w3-row-padding" style="margin-top:64px;margin-bottom: 70px;">
+    <div class="w3-col l3 m6">
+      <img src="asset/work/arrious1.png" id="myImg1" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" >
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="asset/work/champinv.jpg" id="myImg2" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" >
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="asset/work/champinv1.jpg" id="myImg3" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" >
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="asset/work/dragoneex1.jpg" id="myImg4" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" >
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="asset/work/salaam.jpg" id="myImg5" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" >
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="asset/work/Salaam1.jpg" id="myImg6" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" >
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="asset/work/Royal.jpg" id="myImg7" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" >
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="asset/work/ST.jpg" id="myImg8" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" >
+    </div>
+  </div>
+</div>
+
+            <!-- end workshop gallery -->
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+
+      <!-- start footer  -->
+      <div class="footer">
+           
+        <div class="cc">
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14763.681176183472!2d73.187386!3d22.318854!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa13d67d19d1a8bae!2sIT%20souls!5e0!3m2!1sen!2sin!4v1572074733763!5m2!1sen!2sin"
+                width="700" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                
+                    
+                    <div class="ii">
+                        <img src="asset/ITsouls Logo.png" alt="" style="width: 300px;">
+                <div class="m">+91 9723636072 <i class="fa fa-phone"></i></div>
+                <div class="m">info@itsouls.com<i class="fa fa-envelope"></i></div>
+                <div class="m">First Floor:-103 & 119 Saffron Complex, Fatehgunj, Vadodara, Gujarat 390002<i
+                        class="fa fa-map-marker"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="right">
+      <p>© 2011 ITsouls</p>
+        <!-- <a href="HSE.html"> -->
+            
+        <!-- </a> -->
+    </div>
+ 
+
+    <script>
+        const menubtn = document.querySelector('.menu-btn');
+        const navlinks = document.querySelector('.nav-link1');
+
+        menubtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu');
+        });
+   </script>
+  <!-- for animation -->
+  <script>
+    AOS.init();
+  </script>
+ <!-- end animation -->
+ 
+ <!-- work section -->
+ <script>
+  // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img1 = document.getElementById("myImg1");
+var img2 = document.getElementById("myImg2");
+var img3 = document.getElementById("myImg3");
+var img4 = document.getElementById("myImg4");
+var img5 = document.getElementById("myImg5");
+var img6 = document.getElementById("myImg6");
+var img7 = document.getElementById("myImg7");
+var img8 = document.getElementById("myImg8");
+
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img1.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+img2.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+img3.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+img4.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+img5.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+img6.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+img7.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+img8.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+  <!-- end work section -->
+
+   <!-- end footer sec -->
+</body>
+</html>
